@@ -1,0 +1,47 @@
+# 👤 Gerald January
+
+**Senior Data Engineer • Systems Architect • Health IT Specialist**
+
+Seasoned technologist with 15+ years of experience engineering data systems for critical environments — from remote healthcare networks in Alaska to distributed AI nodes. I lead with systems thinking, building intentional workflows that scale across teams, databases, and architectures.
+
+---
+
+### 🔧 Current Focus
+
+- **Advanced ETL & Data Warehousing** – Architecting pipelines using SAS DI Studio, SQL Server, Oracle, and custom connectors
+- **Analytics & Visualization** – Delivering insights through SAS VA, custom reporting tools, and compliance dashboards
+- **AI Deployment Engineering** – Creating and tuning portable flash drive-based AI/OS toolkits, including the Janus LLM node
+- **Cybersecurity Learning** – Pursuing Google Cybersecurity Certification for deeper threat modeling and data integrity practices
+
+---
+
+### 📁 Featured Projects
+
+| Project | Description |
+|--------|-------------|
+| `janus-ai-node` | Local LLM node tuned via Llama.cpp and optimized for CPU deployment |
+| `datawarehouse-optimizer` | ETL workflows for multi-source healthcare datasets using SAS DI Studio |
+| `flash-deploy-kit` | Modular system for portable, repeatable AI and OS setups |
+| `data-pipelines` | Real-world examples of health data integration across Oracle, SQL Server, and MySQL |
+| `tradingview-auto-feed` | Python-based backtesting module for financial data exploration |
+| `cybersecurity-cert-notes` | Ongoing technical notes from Google Cybersecurity course
+
+---
+
+### 📜 Publications & Recognition
+
+- Co-author of three peer-reviewed studies on public health and infrastructure in Alaska  
+- Nominated for the Charles C. Shepard Award by CDC (2021)  
+- Data contributor to federally recognized health economics and COVID vaccine effectiveness research
+
+---
+
+### 📬 Connect
+
+- Personal site: [Coming soon](#)
+- LinkedIn: [linkedin.com/in/gerald-january](#)
+- GitHub: [github.com/gerald-dev](#)
+
+---
+
+_“Engineer clarity. Deploy with purpose. Optimize the system.”_
