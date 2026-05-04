@@ -36,8 +36,8 @@ I built the full stack to ingest, normalize, and surface this data for executive
 - Ingest queue via Cloudflare Workers + R2 object storage; per-hospital run tracking in D1 with retry/resume on partial failures
 - HCRIS FY2023 cost report integration for 711 hospitals: computes cost-charge ratios, markup multiples, charity care as % of total costs
 
-**Actuarial Analysis**
-- Rate index methodology uses `negotiated_avg ÷ gross_charge` (discount rate ratio) rather than raw rate averages — eliminates code-mix bias when comparing hospitals with different service mixes, the same technique used by actuaries to normalize across provider panels
+**Rate Analysis**
+- Rate index methodology uses `negotiated_avg ÷ gross_charge` (discount rate ratio) rather than raw rate averages — eliminates code-mix bias when comparing hospitals with different service mixes
 - Peer comparison across same-state hospitals: "+18% vs peers" means this insurer pays 18% more per service at this hospital than at comparable facilities after controlling for service mix
 - Automatic compliance detection: flags hospitals publishing single-payer rollups as likely non-compliant with the per-payer disclosure requirement — a meaningful signal for contract negotiators and regulators
 
@@ -60,7 +60,7 @@ I built the full stack to ingest, normalize, and surface this data for executive
 
 | Repository | Description |
 |------------|-------------|
-| [`hospital-rates-platform`](https://github.com/businessclub2050/hospital-rates-platform) | CMS MRF ingestion pipeline + actuarial payer intelligence engine — [live API](https://hospital-rates-api.businessclub2050.workers.dev) |
+| [`hospital-rates-platform`](https://github.com/businessclub2050/hospital-rates-platform) | CMS MRF ingestion pipeline + payer intelligence engine — [live API](https://hospital-rates-api.businessclub2050.workers.dev) |
 | [`janus-ai-node`](https://github.com/businessclub2050/janus-ai-node) | Self-hosted LLM inference cluster: dual T4 GPUs, Ollama, LangGraph, ComfyUI on Proxmox + k3s |
 | [`flash-deploy-kit`](https://github.com/businessclub2050/flash-deploy-kit) | Modular provisioning scripts for repeatable AI/OS deployments on bare metal and VMs |
 
