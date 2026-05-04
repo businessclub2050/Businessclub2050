@@ -25,6 +25,8 @@ Docker · Kubernetes (k3s) · Proxmox VE · Linux (Debian) · Python · Bash · 
 
 ### 🏥 Featured: Hospital Price Transparency Intelligence Platform
 
+**🌐 Live API:** [hospital-rates-api.businessclub2050.workers.dev](https://hospital-rates-api.businessclub2050.workers.dev) · **📊 Try:** [`/v1/hospitals/adventist-tillamook/payer-intel`](https://hospital-rates-api.businessclub2050.workers.dev/v1/hospitals/adventist-tillamook/payer-intel) · **📖 Repo:** [`hospital-rates-platform`](https://github.com/businessclub2050/hospital-rates-platform)
+
 Healthcare organizations have been required since 2021 (45 CFR §180.50) to publish machine-readable files (MRFs) listing their negotiated rates with every insurer. Almost no one has analyzed this data at scale — these files are multi-GB streaming JSON, structurally inconsistent across systems, and some hospital networks deliberately obscure per-payer data by filing a single blended rollup likely in violation of the regulation.
 
 I built the full stack to ingest, normalize, and surface this data for executive competitive intelligence:
@@ -58,12 +60,9 @@ I built the full stack to ingest, normalize, and surface this data for executive
 
 | Repository | Description |
 |------------|-------------|
-| `hospital-rates-platform` *(private)* | CMS MRF ingestion pipeline + actuarial payer intelligence engine — 2.3M+ rates, 22 hospitals, edge API |
+| [`hospital-rates-platform`](https://github.com/businessclub2050/hospital-rates-platform) | CMS MRF ingestion pipeline + actuarial payer intelligence engine — [live API](https://hospital-rates-api.businessclub2050.workers.dev) |
 | [`janus-ai-node`](https://github.com/businessclub2050/janus-ai-node) | Self-hosted LLM inference cluster: dual T4 GPUs, Ollama, LangGraph, ComfyUI on Proxmox + k3s |
 | [`flash-deploy-kit`](https://github.com/businessclub2050/flash-deploy-kit) | Modular provisioning scripts for repeatable AI/OS deployments on bare metal and VMs |
-| [`healthcare-etl-patterns`](https://github.com/businessclub2050/healthcare-etl-patterns) | ETL workflow patterns for multi-source health data: Oracle, SQL Server, MySQL, HL7 feeds |
-| [`langfuse-litellm-stack`](https://github.com/businessclub2050/langfuse-litellm-stack) | Docker Compose stack: LiteLLM proxy + Langfuse observability for local LLM deployments |
-| [`data-pipelines`](https://github.com/businessclub2050/data-pipelines) | Real-world health data integration examples across Cerner, Oracle, SQL Server, and MySQL |
 
 ---
 
