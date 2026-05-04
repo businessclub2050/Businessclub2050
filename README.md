@@ -34,7 +34,7 @@ I built the full stack to ingest, normalize, and surface this data for executive
 **Pipeline & Ingestion**
 - Streaming MRF parser (DuckDB + Python) capable of processing 400–670 MB gzip/zip JSON files without loading into memory; handles non-standard ZIP compression variants (Deflate64)
 - Ingest queue via Cloudflare Workers + R2 object storage; per-hospital run tracking in D1 with retry/resume on partial failures
-- HCRIS FY2023 cost report integration for 711 hospitals: computes cost-charge ratios, markup multiples, charity care as % of total costs
+- HCRIS FY2024 cost report integration for 711 hospitals: computes cost-charge ratios, markup multiples, charity care as % of total costs
 
 **Rate Analysis**
 - Rate index methodology uses `negotiated_avg ÷ gross_charge` (discount rate ratio) rather than raw rate averages — eliminates code-mix bias when comparing hospitals with different service mixes
@@ -44,7 +44,7 @@ I built the full stack to ingest, normalize, and surface this data for executive
 **Scale (current)**
 - 2.3M+ negotiated rate rows across 22 hospitals in Oregon, Kansas, and Missouri
 - 21-hospital peer cohort for Oregon market rate comparisons
-- HCRIS cost data loaded for 711 of 723 target KS/MO hospitals (FY2023)
+- HCRIS cost data loaded for 711 of 723 target KS/MO hospitals (FY2024)
 
 **API & Frontend**
 - Edge REST API: Cloudflare Workers + D1 (serverless SQLite), `/v1/hospitals/:id/payer-intel` with peer benchmarking baked in
